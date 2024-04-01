@@ -1,0 +1,135 @@
+html{
+	background-color:pink;
+}
+
+
+.logo{
+	width:50px;
+	height:35px;
+	position:left;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: none;
+  padding:5px;
+  width: min(20rem, 95%);
+  margin:auto;
+  
+}
+
+/*nav bar*/
+
+  .logo img{
+    width: 25px;
+    height: 25px;    
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(241, 56, 164);
+	position:fixed;
+	width:100%;
+	z-index:9999;
+	top:0;
+	
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(184, 9, 146);
+  }
+  
+  .active {
+    background-color: #2AA8D0;
+  }
+
+
+/*art gallery*/
+
+.container {
+  padding-top:60px;
+  margin:  auto;
+  width: 60%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom:35px;
+}
+.slides {
+  display: flex;
+  height: 100%;
+  animation: round 1s infinite;
+}
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.slide-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#next-btn,
+#prev-btn {
+  cursor: pointer;
+  background: transparent;
+  font-size: 30px;
+  border: none;
+  padding: 10px;
+  color: white;
+}
+#next-btn:focus,
+#prev-btn:focus {
+  outline: none;
+}
+.slide-content {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  font-size: 60px;
+  color: purple;
+}
+/* scrolling to top*/
+.top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgb(128, 128, 255) url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
+  box-shadow: 0 0.25rem 0.5rem 0 gray;
+  opacity: 0.7;
+}
+.top:hover {
+  opacity: 0.8;
+}
+.top:focus {
+  opacity: 0.9;
+}
+.top:active {
+  opacity: 1;
+}

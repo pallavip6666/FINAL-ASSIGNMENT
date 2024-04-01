@@ -1,0 +1,268 @@
+html{
+    background-color:pink;
+}
+.logo{
+	width:50px;
+	height:35px;
+	position:left;
+}
+.content{
+	font-size:25px;
+}
+
+h1{
+	font-size:35px;
+	
+}
+
+
+.content {
+  width: 100%;
+   height: 100%;
+ }
+ 
+
+.content_description {
+ 
+  
+  width:45%;
+  height:100px;
+  float:left;
+  padding: 15px;
+  font-size:25px;
+  
+}
+
+
+ .content_gif{
+    
+	height:250px;
+	float: right;
+	margin-left:15%; 
+	padding:20px 20px 20px 20px;
+	width:400px;	
+}
+
+
+
+
+/* scrolling to top*/
+.top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgb(128, 128, 255) url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
+  box-shadow: 0 0.25rem 0.5rem 0 gray;
+  opacity: 0.7;
+}
+.top:hover {
+  opacity: 0.8;
+}
+.top:focus {
+  opacity: 0.9;
+}
+.top:active {
+  opacity: 1;
+}
+
+
+
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content:center;
+width: 100%;
+  height: 60vh;
+
+}
+
+
+.card{
+  background:lightpink;
+  width: 240px;
+  height: 440px;
+  margin: 10px;
+  
+  
+}
+.card-image{ 
+background-color: rgb(241, 56, 164);
+height: 170px;
+margin-bottom: 15px;
+background-size: cover;
+
+}
+.card-image pic-1{
+height: 170px ;
+width: auto;
+}
+.card p,h4,h5{
+  padding:10px;
+}
+.card a{
+  background-color:rgb(184, 9, 146);
+  color:white;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
+
+}
+.card:hover{
+background-color: purple;
+color: white;
+cursor:pointer;
+transform:scale(1.01);
+transition: all 1s ease;
+}
+
+hr{
+	background-color:black;
+}
+.dark{
+  background-color:rgb(151, 37, 151);
+ 
+ padding-top:30px;
+ padding-bottom:15px;
+ width:100%;
+ height:auto;
+  p, h1,h2,h3,a,address {color:white;};
+  
+}
+.light{
+	padding-top:30px;
+  background-color: pink;
+ width:100%;
+ height:110%;
+ h1{color:black;};
+  
+}
+/* content inside aboutme section*/
+.content {
+
+color:white;
+ width: 100%;
+  height: 83vh;
+}
+
+
+
+/*projects gallery section*/
+.container{
+  margin: 100px auto;
+  width:auto;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 250px;
+  height: 450px;
+}
+
+/*hireme and download CV*/
+.action__btns {
+  display: flex;
+  gap: 1rem;
+  margin:15px;
+ .buttons{
+	  color:black;
+  }
+}
+
+.action__btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  
+  
+}
+
+.buttons {
+  color: var(--primary-color);
+  
+  
+}
+
+.buttons:hover {
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+}
+
+
+img {
+  border: 1px solid #ddd;
+  border-radius: none;
+  padding:5px;
+  width: min(20rem, 95%);
+  margin:auto;
+  
+}
+
+
+
+
+/*nav bar*/
+
+  .logo img{
+    width: 25px;
+    height: 25px;    
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(241, 56, 164);
+	position:fixed;
+	width:100%;
+	z-index:9999;
+	top:0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(184, 9, 146);
+  }
+  
+  .active {
+    background-color: #2AA8D0;
+  }
+
+  .maps
+  {
+    width:800px;
+    height:470px;
+  }
+  
+
+
